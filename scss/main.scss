@@ -1,0 +1,42 @@
+//Colores
+$primary-color:     #6F4E37; //Fondo principal
+$secondary-color:   #556B2F; //Iconos, botones secundarios y secciones relacionadas con el impacto ecológico
+$tertiary-color:    #F5F5DC; //Fondo secundario
+$emphasis-color:    #DAA520; //Destaca llamados a la acción (CTA), precios, bordes, detalles.
+$text-color:        #FFFFFF; 
+$details-color:     #2E2E2E; //Texto en areas claras, bordes, menus. 
+
+//Tipografía
+$primary-font:   'Playfair Display', serif; //Títulos
+$secondary-font: 'Lato', sans-serif; //Cuerpo de textos
+$button-font:    'Montserrat', sans-serif; //Botones
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+nav{
+    background-color: $primary-color;
+    width: 100vw;
+    height: 10vh;
+}
+
+main{
+    background-color: $primary-color;
+    width: 100vw;
+    height: 80vh;
+}
+
+footer{
+    background-color: $tertiary-color;
+    width: 100vw;
+    height: 10vh;
+}

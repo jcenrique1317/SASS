@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  background-color: #6F4E37;
+  width: 100vw;
+  height: 10vh;
+}
+
+main {
+  background-color: #6F4E37;
+  width: 100vw;
+  height: 80vh;
+}
+
+footer {
+  background-color: #F5F5DC;
+  width: 100vw;
+  height: 10vh;
+}/*# sourceMappingURL=main.css.map */
