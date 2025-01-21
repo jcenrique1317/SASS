@@ -27,13 +27,14 @@ nav{
     background-color: $primary-color;
     width: 100vw;
     height: 10vh;
+    font-family: $secondary-font;
 }
 
-main{
-    background-color: $primary-color;
-    width: 100vw;
-    height: 80vh;
-}
+// main{
+//     background-color: $primary-color;
+//     width: 100vw;
+//     height: 80vh;
+// }
 
 footer{
     background-color: $tertiary-color;

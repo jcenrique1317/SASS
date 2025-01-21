@@ -12,12 +12,7 @@ nav {
   background-color: #6F4E37;
   width: 100vw;
   height: 10vh;
-}
-
-main {
-  background-color: #6F4E37;
-  width: 100vw;
-  height: 80vh;
+  font-family: "Lato", sans-serif;
 }
 
 footer {
