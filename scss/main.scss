@@ -25,9 +25,33 @@ html{
 
 nav{
     background-color: $primary-color;
-    width: 100vw;
-    height: 10vh;
-    font-family: $secondary-font;
+    width: auto;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-family: $primary-font;
+        font-size: 3.5rem ;
+        padding: 1.5rem;
+        color: $text-color;
+    }
+
+    .icons{
+        display: flex;
+        gap: 1.5rem ;
+        button{
+            background: none;
+            border-style: none;
+
+        }
+
+        svg{
+            color: $secondary-color;
+            width: 3.6rem;
+            height: 3.6rem;
+        }
+    }
+
 }
 
 // main{

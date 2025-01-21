@@ -10,9 +10,29 @@ html {
 
 nav {
   background-color: #6F4E37;
-  width: 100vw;
-  height: 10vh;
-  font-family: "Lato", sans-serif;
+  width: auto;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav p {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  padding: 1.5rem;
+  color: #FFFFFF;
+}
+nav .icons {
+  display: flex;
+  gap: 1.5rem;
+}
+nav .icons button {
+  background: none;
+  border-style: none;
+}
+nav .icons svg {
+  color: #556B2F;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 
 footer {
