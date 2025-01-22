@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html {
@@ -17,7 +17,7 @@ nav {
 }
 nav p {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 5rem;
   padding: 1.5rem;
   color: #FFFFFF;
 }
@@ -35,8 +35,46 @@ nav .icons svg {
   height: 3.6rem;
 }
 
-footer {
+main {
   background-color: #F5F5DC;
+  width: 100vw;
+  height: 80vh;
+}
+main article {
+  color: #2E2E2E;
+  display: flex;
+  width: auto;
+  padding: 3.1rem;
+  justify-content: space-between;
+}
+main article .impact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main article h1 {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+}
+main article p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+main article button {
+  width: 18vw;
+  background-color: #F5F5DC;
+  color: #DAA520;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+main article img {
+  width: 50vw;
+  border-radius: 1.9rem;
+}
+
+footer {
+  background-color: #6F4E37;
   width: 100vw;
   height: 10vh;
 }/*# sourceMappingURL=main.css.map */
