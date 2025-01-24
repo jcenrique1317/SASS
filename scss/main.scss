@@ -13,7 +13,7 @@ $secondary-font: 'Lato', sans-serif; //Cuerpo de textos
 $button-font:    'Montserrat', sans-serif; //Botones
 
 
-
+//Estilos globales
 *{
     box-sizing: border-box;
     padding: 0;
@@ -24,116 +24,159 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    font-family: $secondary-font;
+    background-color: $tertiary-color;
+    overflow-x: hidden; //Evita el desbordamiento horizontal
+}
+
+//Barra de navegacion
 nav{
     background-color: $primary-color;
     width: 100%;
     padding: 1.6rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     p{
         font-family: $primary-font;
         font-size: 5rem ;
-        padding: 1.5rem;
+        padding: 1rem;
         color: $text-color;
     }
 
     .icons{
         display: flex;
         gap: 1.5rem ;
+        
         button{
             background: none;
             border-style: none;
-
+            cursor: pointer;
         }
 
         svg{
             color: $secondary-color;
-            width: 3.6rem;
-            height: 3.6rem;
+            width: 4rem;
+            height: 4rem;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
-
 }
 
+
+//Contenido principal
 main{
      background-color: $tertiary-color;
      width: 100%;
-     height: 80vh;
+     min-height: 80vh;
+     padding: 3rem;
      article{
-        color: $details-color;
         display: flex;
-        width: auto;
-        padding: 3.1rem;
         justify-content: space-between;
+        gap: 2rem;
+
         .impact-section{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
+            max-width: 50%;
         }
         h1{
             font-size: 3.5rem;
             font-family: $primary-font;
+            color: $details-color;
         }
         
         p{
-            font-family: $secondary-font;
-            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-size: 1.8rem;
         }
 
         button{
-            width: 18vw;
-            background-color: $tertiary-color;
-            color: $emphasis-color;
-            border-style: none;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background-color: $primary-color;
+            color: $text-color;
+            border: none;
             font-family: $button-font;
             font-size: 2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $emphasis-color;
+              }
         }
-        img{
-                width: 50vw;
-                border-radius: 1.9rem;
+        
+        
+        .image-section{
+            img{
+                width: 100%;
+                border-radius: 2rem;
+                max-width: 40rem;
             }
+        }
+        
         }
      }
  
-section{
+
+//Secciones secundarias
+
+    section{
     width: 100%;
-    height: auto;
-    padding: 3.1rem;
-    background-color: $tertiary-color;
+    padding: 3rem 1.5rem;
+    
     h2{
         color: $emphasis-color;
-        font-size: 1.7rem ;
+        font-size: 2.5rem ;
         font-family: $button-font;
+        margin-bottom: 2rem;
     }
 
     .cafe-molido{
-        padding-left: 2rem;
-        h2{
-            font-weight: bolder;
-            padding-bottom: 3rem;
-        }
         .product-card{
-            width: 30vw;
-            height: auto;
+            width: 100%;
+            max-width: 45rem;
             background-color: $cards-color;
             color: $details-color;
             padding: 2rem;
             border-radius: 0.8rem;
             position: relative;
-            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             img{
-                width: 22rem;
-                height: 22rem;
-                padding: 0.5rem;
-                background-image: cover ;
+                width: 100%;
+                max-height: 25rem;
+                object-fit: cover;
                 border-radius: 0.8rem;
             }
             svg{
                 position: absolute;
-                top: 0.5rem;
-                right: 0.2rem;
+                top: 1rem;
+                right: 1rem;
                 width: 2.8rem;
                 height: 2.8rem;
+                color: $secondary-color;
+                cursor: pointer;
+                &:hover {
+                    color: $emphasis-color;
+                  }
+
+            }
+
+            h3{
+                font-size: 2rem;
+                margin-top: 1rem;
+            }
+
+            p{
+                font-size: 1.6rem;
+                margin-top: 0.5rem;
             }
         }
     }

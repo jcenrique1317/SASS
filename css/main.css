@@ -8,17 +8,24 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #F5F5DC;
+  overflow-x: hidden;
+}
+
 nav {
   background-color: #6F4E37;
   width: 100%;
   padding: 1.6rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav p {
   font-family: "Playfair Display", serif;
   font-size: 5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   color: #FFFFFF;
 }
 nav .icons {
@@ -28,90 +35,108 @@ nav .icons {
 nav .icons button {
   background: none;
   border-style: none;
+  cursor: pointer;
 }
 nav .icons svg {
   color: #556B2F;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 4rem;
+  height: 4rem;
+}
+nav .icons svg:hover {
+  transform: scale(1.1);
 }
 
 main {
   background-color: #F5F5DC;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 3rem;
 }
 main article {
-  color: #2E2E2E;
   display: flex;
-  width: auto;
-  padding: 3.1rem;
   justify-content: space-between;
+  gap: 2rem;
 }
 main article .impact-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  max-width: 50%;
 }
 main article h1 {
   font-size: 3.5rem;
   font-family: "Playfair Display", serif;
+  color: #2E2E2E;
 }
 main article p {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
 }
 main article button {
-  width: 18vw;
-  background-color: #F5F5DC;
-  color: #DAA520;
-  border-style: none;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #6F4E37;
+  color: #FFFFFF;
+  border: none;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-main article img {
-  width: 50vw;
-  border-radius: 1.9rem;
+main article button:hover {
+  background-color: #DAA520;
+}
+main article .image-section img {
+  width: 100%;
+  border-radius: 2rem;
+  max-width: 40rem;
 }
 
 section {
   width: 100%;
-  height: auto;
-  padding: 3.1rem;
-  background-color: #F5F5DC;
+  padding: 3rem 1.5rem;
 }
 section h2 {
   color: #DAA520;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
-}
-section .cafe-molido {
-  padding-left: 2rem;
-}
-section .cafe-molido h2 {
-  font-weight: bolder;
-  padding-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 section .cafe-molido .product-card {
-  width: 30vw;
-  height: auto;
+  width: 100%;
+  max-width: 45rem;
   background-color: #D7B8A4;
   color: #2E2E2E;
   padding: 2rem;
   border-radius: 0.8rem;
   position: relative;
-  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 section .cafe-molido .product-card img {
-  width: 22rem;
-  height: 22rem;
-  padding: 0.5rem;
-  background-image: cover;
+  width: 100%;
+  max-height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.8rem;
 }
 section .cafe-molido .product-card svg {
   position: absolute;
-  top: 0.5rem;
-  right: 0.2rem;
+  top: 1rem;
+  right: 1rem;
   width: 2.8rem;
   height: 2.8rem;
+  color: #556B2F;
+  cursor: pointer;
+}
+section .cafe-molido .product-card svg:hover {
+  color: #DAA520;
+}
+section .cafe-molido .product-card h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+section .cafe-molido .product-card p {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
