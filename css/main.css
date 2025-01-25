@@ -103,7 +103,7 @@ section h2 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 2rem;
 }
-section .cafe-molido .product-card {
+section .cafe-molido .card-section .product-card {
   width: 100%;
   max-width: 45rem;
   background-color: #D7B8A4;
@@ -113,14 +113,21 @@ section .cafe-molido .product-card {
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-section .cafe-molido .product-card img {
+section .cafe-molido .card-section .product-card .product-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .cafe-molido .card-section .product-card .product-image img {
   width: 100%;
   max-height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.8rem;
 }
-section .cafe-molido .product-card svg {
+section .cafe-molido .card-section svg {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -129,14 +136,14 @@ section .cafe-molido .product-card svg {
   color: #556B2F;
   cursor: pointer;
 }
-section .cafe-molido .product-card svg:hover {
+section .cafe-molido .card-section svg:hover {
   color: #DAA520;
 }
-section .cafe-molido .product-card h3 {
+section .cafe-molido .card-section h3 {
   font-size: 2rem;
   margin-top: 1rem;
 }
-section .cafe-molido .product-card p {
+section .cafe-molido .card-section p {
   font-size: 1.6rem;
   margin-top: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
