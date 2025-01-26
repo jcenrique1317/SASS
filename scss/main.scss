@@ -128,8 +128,8 @@ main{
 
 //Secciones secundarias
 
-    section{
-    width: 100%;
+section{
+    width: auto;
     padding: 3rem 1.5rem;
     
     h2{
@@ -141,64 +141,85 @@ main{
 
     
     .cafe-molido{
+        padding-bottom: 6rem;
         .card-section{
+            display: flex;
+            gap: 2rem; //Espaciado entre cards
+            justify-content: center; 
+            align-items: center;
+            flex-wrap: wrap;
             .product-card{
-                width: 100%;
-                max-width: 45rem;
+                flex: 1 1 calc(33.333% - 2rem) ; // Cards con un ancho del 33.33%, ajustando con el gap
+                max-width: 45rem; //Ancho maximo para evitar que crezcan demasiado
                 background-color: $cards-color;
                 color: $details-color;
                 padding: 2rem;
                 border-radius: 0.8rem;
                 position: relative;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    
-                .product-image{
+                overflow: hidden;
+                display: flex;
+                flex-direction:column ;
+                align-items: center;
+
+                .icon{
                     width: 100%;
-                    height: 100%;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img{
-                        width: 100%;
-                        max-height: 25rem;
-                        object-fit: cover;
-                        border-radius: 0.8rem;
+                    justify-content: flex-end;
+                    padding: 1.2rem;
+
+                    svg{
+                        width: 3.6rem;
+                        height: 3.6rem;
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                        width: 2.8rem;
+                        height: 2.8rem;
+                        color: $secondary-color;
+                        cursor: pointer;
+                        &:hover {
+                            color: $emphasis-color;
+                          }
+        
                     }
                 }
-        }
 
-            
-            svg{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                width: 2.8rem;
-                height: 2.8rem;
-                color: $secondary-color;
-                cursor: pointer;
-                &:hover {
-                    color: $emphasis-color;
-                  }
+                img{
+                    width: 100%;
+                    aspect-ratio: 16 / 9; //Define una proporcion horizontal (16:9 es la mas comun)
+                    max-height: 25rem;
+                    object-fit: cover;
+                    border-radius: 0.8rem;
+                    overflow: hidden;
+                }
 
-            }
+                
 
-            h3{
-                font-size: 2rem;
-                margin-top: 1rem;
-            }
-
-            p{
-                font-size: 1.6rem;
-                margin-top: 0.5rem;
-            }
+                h3{
+                        font-size: 2rem;
+                        margin-top: 1.5rem;
+                        text-align: center;
+                    }
+                p{
+                        font-size: 1.6rem;
+                        margin-top: 0.5rem;
+                        text-align: center;
+                    }
+                }
+         
         }
 
 
     }
+
+
+    .cafe-granos{
+        @extend .cafe-molido
+    }
 }
 
-// footer{
-//     background-color: $primary-color;
-//     width: 100%;
-//     height: 10vh;
-// }
+// // footer{
+// //     background-color: $primary-color;
+// //     width: 100%;
+// //     height: 10vh;
+// // }
