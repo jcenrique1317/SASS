@@ -19,6 +19,7 @@ nav {
   width: 100%;
   padding: 1.6rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -54,7 +55,9 @@ main {
 }
 main article {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 main article .impact-section {
@@ -73,6 +76,11 @@ main article p {
   font-size: 1.8rem;
 }
 main article button {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+main article button {
   margin-top: 1rem;
   padding: 1rem 2rem;
   background-color: #6F4E37;
@@ -81,7 +89,6 @@ main article button {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   border-radius: 0.5rem;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 main article button:hover {
@@ -108,9 +115,10 @@ section .cafe-molido, section .cafe-granos {
 }
 section .cafe-molido .card-section, section .cafe-granos .card-section {
   display: flex;
-  gap: 2rem;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 section .cafe-molido .card-section .product-card, section .cafe-granos .card-section .product-card {

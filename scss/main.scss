@@ -12,6 +12,21 @@ $primary-font:   'Playfair Display', serif; //Títulos
 $secondary-font: 'Lato', sans-serif; //Cuerpo de textos
 $button-font:    'Montserrat', sans-serif; //Botones
 
+//Mixins
+@mixin flexCenter ($direction, $content, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin buttonStyle{
+    button{
+        background: none;
+        border-style: none;
+        cursor: pointer;
+    }
+}
 
 //Estilos globales
 *{
@@ -30,14 +45,12 @@ body{
     overflow-x: hidden; //Evita el desbordamiento horizontal
 }
 
-//Barra de navegacion
+//Barra de navegación
 nav{
     background-color: $primary-color;
     width: 100%;
     padding: 1.6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter(row, space-between, center );
     p{
         font-family: $primary-font;
         font-size: 5rem ;
@@ -48,12 +61,7 @@ nav{
     .icons{
         display: flex;
         gap: 1.5rem ;
-        
-        button{
-            background: none;
-            border-style: none;
-            cursor: pointer;
-        }
+        @include buttonStyle();
 
         svg{
             color: $secondary-color;
@@ -75,11 +83,10 @@ main{
      min-height: 80vh;
      padding: 3rem;
      article{
-        display: flex;
-        justify-content: space-between;
+        @include flexCenter(row, space-between, center );
         gap: 2rem;
 
-        .impact-section{
+        .impact-section{    
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -95,6 +102,8 @@ main{
             margin-top: 1rem;
             font-size: 1.8rem;
         }
+        
+        @include buttonStyle();
 
         button{
             margin-top: 1rem;
@@ -105,7 +114,6 @@ main{
             font-family: $button-font;
             font-size: 2rem;
             border-radius: 0.5rem;
-            cursor: pointer;
             transition: background-color 0.3s;
 
             &:hover {
@@ -143,14 +151,12 @@ section{
     .cafe-molido{
         padding-bottom: 6rem;
         .card-section{
-            display: flex;
+            @include flexCenter(row, center , center );    
             gap: 2rem; //Espaciado entre cards
-            justify-content: center; 
-            align-items: center;
             flex-wrap: wrap;
             .product-card{
                 flex: 1 1 calc(33.333% - 2rem) ; // Cards con un ancho del 33.33%, ajustando con el gap
-                max-width: 45rem; //Ancho maximo para evitar que crezcan demasiado
+                max-width: 45rem; //Ancho máximo para evitar que crezcan demasiado
                 background-color: $cards-color;
                 color: $details-color;
                 padding: 2rem;
@@ -186,7 +192,7 @@ section{
 
                 img{
                     width: 100%;
-                    aspect-ratio: 16 / 9; //Define una proporcion horizontal (16:9 es la mas comun)
+                    aspect-ratio: 16 / 9; //Define una proporción horizontal (16:9 es la mas común)
                     max-height: 25rem;
                     object-fit: cover;
                     border-radius: 0.8rem;
