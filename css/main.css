@@ -177,4 +177,39 @@ section .about-us {
   font-size: 1.5rem;
   text-align: justify;
   color: #2E2E2E;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6F4E37;
+  width: 100%;
+  height: auto;
+  color: #556B2F;
+}
+footer h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  padding: 1rem;
+  color: #FFFFFF;
+}
+footer .social-media {
+  display: flex;
+  gap: 2.5rem;
+  padding-right: 2.5rem;
+}
+footer .social-media button {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+footer .social-media svg {
+  color: #556B2F;
+  width: 4rem;
+  height: 4rem;
+}
+footer .social-media svg:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */
