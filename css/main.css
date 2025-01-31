@@ -110,10 +110,10 @@ section h2 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 2rem;
 }
-section .cafe-molido, section .cafe-granos {
+section .cafe-molido, section .about-us, section .cafe-granos {
   padding-bottom: 6rem;
 }
-section .cafe-molido .card-section, section .cafe-granos .card-section {
+section .cafe-molido .card-section, section .about-us .card-section, section .cafe-granos .card-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -121,7 +121,7 @@ section .cafe-molido .card-section, section .cafe-granos .card-section {
   gap: 2rem;
   flex-wrap: wrap;
 }
-section .cafe-molido .card-section .product-card, section .cafe-granos .card-section .product-card {
+section .cafe-molido .card-section .product-card, section .about-us .card-section .product-card, section .cafe-granos .card-section .product-card {
   flex: 1 1 calc(33.333% - 2rem);
   max-width: 45rem;
   background-color: #D7B8A4;
@@ -134,13 +134,13 @@ section .cafe-molido .card-section .product-card, section .cafe-granos .card-sec
   flex-direction: column;
   align-items: center;
 }
-section .cafe-molido .card-section .product-card .icon, section .cafe-granos .card-section .product-card .icon {
+section .cafe-molido .card-section .product-card .icon, section .about-us .card-section .product-card .icon, section .cafe-granos .card-section .product-card .icon {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 1.2rem;
 }
-section .cafe-molido .card-section .product-card .icon svg, section .cafe-granos .card-section .product-card .icon svg {
+section .cafe-molido .card-section .product-card .icon svg, section .about-us .card-section .product-card .icon svg, section .cafe-granos .card-section .product-card .icon svg {
   width: 3.6rem;
   height: 3.6rem;
   position: absolute;
@@ -151,10 +151,10 @@ section .cafe-molido .card-section .product-card .icon svg, section .cafe-granos
   color: #556B2F;
   cursor: pointer;
 }
-section .cafe-molido .card-section .product-card .icon svg:hover, section .cafe-granos .card-section .product-card .icon svg:hover {
+section .cafe-molido .card-section .product-card .icon svg:hover, section .about-us .card-section .product-card .icon svg:hover, section .cafe-granos .card-section .product-card .icon svg:hover {
   color: #DAA520;
 }
-section .cafe-molido .card-section .product-card img, section .cafe-granos .card-section .product-card img {
+section .cafe-molido .card-section .product-card img, section .about-us .card-section .product-card img, section .cafe-granos .card-section .product-card img {
   width: 100%;
   aspect-ratio: 16/9;
   max-height: 25rem;
@@ -163,13 +163,18 @@ section .cafe-molido .card-section .product-card img, section .cafe-granos .card
   border-radius: 0.8rem;
   overflow: hidden;
 }
-section .cafe-molido .card-section .product-card h3, section .cafe-granos .card-section .product-card h3 {
+section .cafe-molido .card-section .product-card h3, section .about-us .card-section .product-card h3, section .cafe-granos .card-section .product-card h3 {
   font-size: 2rem;
   margin-top: 1.5rem;
   text-align: center;
 }
-section .cafe-molido .card-section .product-card p, section .cafe-granos .card-section .product-card p {
+section .cafe-molido .card-section .product-card p, section .about-us .card-section .product-card p, section .cafe-granos .card-section .product-card p {
   font-size: 1.6rem;
   margin-top: 0.5rem;
   text-align: center;
+}
+section .about-us {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #2E2E2E;
 }/*# sourceMappingURL=main.css.map */

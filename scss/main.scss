@@ -222,7 +222,17 @@ section{
     .cafe-granos{
         @extend .cafe-molido
     }
+
+
+    .about-us{
+       @extend .cafe-molido;
+        font-size: 1.5rem;
+        text-align: justify;
+        color: $details-color;
+        
+    }
 }
+
 
 // // footer{
 // //     background-color: $primary-color;
